@@ -1,3 +1,5 @@
+use crate::config::constants::logger_constants;
+
 pub fn init_logger(){
-	log4rs::init_file("src/config/log4rs.yaml", Default::default()).unwrap();
+	log4rs::init_file(logger_constants::LOGGER_CONFIG_PATH, Default::default()).unwrap();
 }

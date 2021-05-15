@@ -1,0 +1,1 @@
+pub const LOGGER_CONFIG_PATH: &str ="src/config/log4rs.yaml";

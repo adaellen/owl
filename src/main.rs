@@ -1,4 +1,5 @@
 use log::{error, info, warn};
+mod config;
 mod logger;
 mod user_interface;
 
