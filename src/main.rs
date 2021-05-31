@@ -2,6 +2,9 @@ use log::{error, info, warn};
 mod config;
 mod logger;
 mod user_interface;
+use digest::Digest;
+use config::types::security_types::ApplicationHasher;
+use config::types::security_types::HashResult;
 
 fn main() {
     logger::init_logger();
@@ -21,4 +24,8 @@ fn main() {
     assert_eq!(Some("baz"), lines.next());
 
     assert_eq!(None, lines.next());
+
+    let mut hasher = <ApplicationHasher as Digest>::new();
+    hasher.update(b"Hello World!!!");
+    let result = hasher.finalize();
 }

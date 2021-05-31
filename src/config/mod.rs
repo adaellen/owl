@@ -1,4 +1,3 @@
 pub mod theme;
 pub mod constants;
-
-pub type IdNumber = u32;
+pub mod types;

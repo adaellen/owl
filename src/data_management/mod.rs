@@ -1,4 +1,4 @@
-use crate::config::IdNumber;
+use config::types::IdNumber;
 pub mod cache;
 pub mod storage;
 
