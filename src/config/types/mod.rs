@@ -1,3 +1,5 @@
+
 pub mod security_types;
 
-pub type IdNumber = u32;
+pub type ResourceId = u32;
+pub type ResourceIdCollection = Vec<ResourceId>;

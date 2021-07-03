@@ -1,6 +1,6 @@
 use config::types::security_types::ApplicationHasher;
 use config::types::security_types::HashResult;
-use config::IdNumber;
+use config::ResourceId;
 
 pub mod hash {
 	pub struct hash_wrapper {
