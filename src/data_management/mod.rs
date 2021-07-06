@@ -1,7 +1,6 @@
 use config::types::ResourceIdNumber;
 pub mod cache;
 pub mod storage;
-pub mod database;
 
 enum ResourceType {
 	Note,
