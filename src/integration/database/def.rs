@@ -11,6 +11,5 @@ struct TableDefinition {
 	table_columns: &[ColumnDefinition],
 }
 
-pub fn construct_database_definition()-> &[TableDefinition]{
-	return null
-}
+pub type DatabaseDefinition = &[TableDefinition];
+
